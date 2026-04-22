@@ -1,0 +1,16 @@
+[package]
+name = "voting_system"
+version = "0.1.0"
+authors = ["DVO1111"]
+edition = "2018"
+
+[dependencies]
+solana-sdk = { version = "^1.8", features = ["no-entrypoint"] }
+solana-program = "^1.8"
+spl-token = "^3.2"
+
+[profile.dev]
+opt-level = 2
+
+[profile.release]
+opt-level = 3
